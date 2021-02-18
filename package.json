@@ -14,7 +14,8 @@
     "check-types": "tsc --pretty",
     "postinstall": "husky install",
     "pre-commit": "lint-staged",
-    "pre-push": "yarn run check-types"
+    "pre-push": "yarn run check-types",
+    "commit": "cz"
   },
   "dependencies": {
     "next": "10.0.7",
@@ -22,10 +23,14 @@
     "react-dom": "17.0.1"
   },
   "devDependencies": {
+    "@commitlint/cli": "^11.0.0",
+    "@commitlint/config-conventional": "^11.0.0",
     "@types/node": "^14.14.28",
     "@types/react": "^17.0.2",
     "@typescript-eslint/eslint-plugin": "^4.15.1",
     "@typescript-eslint/parser": "^4.15.1",
+    "commitizen": "^4.2.3",
+    "cz-conventional-changelog": "^3.3.0",
     "eslint": "^7.20.0",
     "eslint-config-prettier": "^7.2.0",
     "eslint-plugin-react": "^7.22.0",
