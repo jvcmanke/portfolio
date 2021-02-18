@@ -1,0 +1,6 @@
+{
+  "*.@(ts|js|tsx|jsx)": [
+    "yarn run lint-files",
+    "yarn run check-format-files"
+  ]
+}

@@ -8,8 +8,13 @@
     "start": "next start",
     "format": "prettier --write .",
     "check-format": "prettier --check .",
+    "check-format-files": "prettier --check",
     "lint": "eslint --ext ts,js,tsx,jsx .",
-    "check-types": "tsc --pretty"
+    "lint-files": "eslint --ext ts,js,tsx,jsx",
+    "check-types": "tsc --pretty",
+    "postinstall": "husky install",
+    "pre-commit": "lint-staged",
+    "pre-push": "yarn run check-types"
   },
   "dependencies": {
     "next": "10.0.7",
@@ -24,6 +29,8 @@
     "eslint": "^7.20.0",
     "eslint-config-prettier": "^7.2.0",
     "eslint-plugin-react": "^7.22.0",
+    "husky": "^5.0.9",
+    "lint-staged": "^10.5.4",
     "prettier": "^2.2.1",
     "typescript": "^4.1.5"
   }
