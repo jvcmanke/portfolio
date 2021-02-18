@@ -39,3 +39,26 @@
 - Install tools
 - Setup example page and API
 - Deploy initial version
+
+### Log #1
+
+- Generated a boilerplate Next.js app with typescript
+  - Have a few files to play with during the following steps
+- Added local Prettier installation and configuration
+  - Standardize formatting across Javascript and Typescript files
+- Added local ESLint installation and configuration
+  - Enforce some linting rules for better code practices
+- Added Husky and configured pre-commit and pre-push hooks
+  - Enforce linting and formatting on commits and type safety on pushes
+- Added Commitizen and Commitlint
+  - Enforce standard commit messages and add a prompt to easily create them
+
+Notes:
+
+Useful scripts:
+
+- `commit`: open Commitizen's commit message prompt
+- `format`: apply formatting to all Javascript and Typescript files
+- `check-format`: check for any formatting errors
+- `check-types`: check for any typing errors
+- `lint`: check for any linting errors
