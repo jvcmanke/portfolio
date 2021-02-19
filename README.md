@@ -66,7 +66,7 @@ Useful scripts:
 ### Log #2
 
 - Made `src` folder typescripts `baseUrl`
-  - Can now import directly from folter in `src` (ex. `import { theme } from "styles/theme"`)
+  - Can now import directly from folders in `src` (ex. `import { theme } from "styles/theme"`)
 - Added `styled-components` and `polished` for component styling
   - Normalized global styled with `polished`'s `normalize` mixin
   - Created basic theme with typing support
