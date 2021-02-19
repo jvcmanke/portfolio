@@ -28,7 +28,7 @@
 - React
 - Next.js
 - Prisma 2
-- Styled Components
+- Styled Components + Polished
 - React Query
 
 # Delivery #1
@@ -42,15 +42,15 @@
 
 ### Log #1
 
-- Generated a boilerplate Next.js app with typescript
+- Generated a boilerplate `Next.js` app with typescript
   - Have a few files to play with during the following steps
-- Added local Prettier installation and configuration
+- Added local `Prettier` installation and configuration
   - Standardize formatting across Javascript and Typescript files
-- Added local ESLint installation and configuration
+- Added local `ESLint` installation and configuration
   - Enforce some linting rules for better code practices
-- Added Husky and configured pre-commit and pre-push hooks
+- Added `Husky` and configured pre-commit and pre-push hooks
   - Enforce linting and formatting on commits and type safety on pushes
-- Added Commitizen and Commitlint
+- Added `Commitizen` and `Commitlint`
   - Enforce standard commit messages and add a prompt to easily create them
 
 Notes:
@@ -62,3 +62,12 @@ Useful scripts:
 - `check-format`: check for any formatting errors
 - `check-types`: check for any typing errors
 - `lint`: check for any linting errors
+
+### Log #2
+
+- Made `src` folder typescripts `baseUrl`
+  - Can now import directly from folter in `src` (ex. `import { theme } from "styles/theme"`)
+- Added `styled-components` and `polished` for component styling
+  - Normalized global styled with `polished`'s `normalize` mixin
+  - Created basic theme with typing support
+- Recreated `Next.js`'s boilerplate with `styled-components` to verify everything is working
