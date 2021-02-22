@@ -71,3 +71,9 @@ Useful scripts:
   - Normalized global styled with `polished`'s `normalize` mixin
   - Created basic theme with typing support
 - Recreated `Next.js`'s boilerplate with `styled-components` to verify everything is working
+
+### Log #3
+
+- Added `prisma` for easy database access and type safety
+- Created basic database schema with a `Project` model
+- Created example API route to test the `prisma` configuration
